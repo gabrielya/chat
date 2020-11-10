@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./styles.css";
 
 class App extends Component {
   constructor() {
@@ -12,7 +13,13 @@ class App extends Component {
   render() {
     const { task, tasks } = this.state;
 
-    return <div>Hello World</div>;
+    return (
+      <div id="container">
+        <div className="users">Users</div>
+        <div className="message-list">Messages List</div>
+        <div className="new-message">New Message</div>
+      </div>
+    );
   }
 }
 
